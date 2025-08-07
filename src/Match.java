@@ -10,6 +10,7 @@ public abstract class Match {
         this.id=id;
         this.date=date;
         this.lieu=lieu;
+        this.typeDeMatch=typeDeMatch;
     }
 
     public int getId(){
