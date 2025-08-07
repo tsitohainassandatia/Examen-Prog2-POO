@@ -1,16 +1,17 @@
 import java.time.LocalDate;
+import java.util.List;
 
 public abstract class Match {
     private int id;
     private LocalDate date;
     private String lieu;
-    private TypeMatch typeDeMatch;
+    private List<TypeMatch> typeDeMatchs;
 
-    public Match(int id, LocalDate date, String lieu, TypeMatch typeDeMatch){
+    public Match(int id, LocalDate date, String lieu, List<TypeMatch> typeDeMatchs){
         this.id=id;
         this.date=date;
         this.lieu=lieu;
-        this.typeDeMatch=typeDeMatch;
+        this.typeDeMatchs=typeDeMatchs;
     }
 
     public int getId(){
@@ -22,7 +23,8 @@ public abstract class Match {
     public String lieu(){
         return lieu;
     }
-    public TypeMatch getTypeDeMatch(){
-        return typeDeMatch;
+    public String getTypeDeMatch(){
+        return typeDeMatchs;
     }
+    
 }

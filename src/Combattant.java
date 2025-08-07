@@ -42,5 +42,5 @@ public class Combattant {
     public List<String> getTitres(){
         return titres;
     }
-
+    
 }
